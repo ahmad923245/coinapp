@@ -11,7 +11,7 @@ const TopGainers = require('./models/TopGainers.model');
 
 
 const app = express();
-const port = process.env.PORT || 4040;
+const port = process.env.PORT || 8080;
 app.use(express.json())
 app.use(cors({
     origin: '*'
@@ -351,3 +351,7 @@ app.get('/api/topgainers', async (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
+
+
+
+// mongodb+srv://vercel-admin-user:jpEZgq6YJDktSiXT@cluster0.gut2w.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
