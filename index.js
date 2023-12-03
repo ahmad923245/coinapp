@@ -20,7 +20,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/coinsapp', {
+mongoose.connect('mongodb+srv://ahmad923:bCslMBziaRT215sB@cluster0.gut2w.mongodb.net/?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => {
